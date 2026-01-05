@@ -1,0 +1,102 @@
+:root{
+  --White: #fff;
+}
+body {
+  margin-top: 0;
+  padding: 0;
+ box-sizing: border-box;
+
+ background-color: #1E1F29;
+ min-height: 100vh;
+
+ background-image: url(pattern-hills.svg),url(bg-stars.svg);
+ background-repeat: no-repeat,no-repeat;
+ background-position: bottom right, top;
+ background-size: 100%, 100%;
+
+ font-family: "Red Hat Text", sans-serif;
+
+ display: flex;
+ justify-content: center;
+}
+
+h1{
+  color: #fff;
+  font-size: 24px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin-top: 2rem;
+}
+
+.wrapper{
+  width: 620px;
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
+ 
+.wrapper  body{
+  align-content: center;
+}
+
+.grid-cell{
+  text-align: center;
+  width: 128px;
+  height: 144px;
+}
+main {
+  width: 100%;
+  justify-content: space-between;
+  display: flex;
+  flex-direction: row-reverse;
+}
+.grid-cell .card{
+  border-radius: 8px;
+  overflow: hidden;
+  width: 128px;
+  height: 128px;
+  bottom: 20px;
+  position: relative;
+  background-color: #343650;
+  filter: drop-shadow(0 8px 0 #191a24);
+}
+
+.grid-cell .card__top{
+  top: 0;
+  background-color: #292b40;
+  color: rgba(red, green, blue, alpha);
+}
+
+.card__top__number{
+  top: 100%;
+  position: absolute;
+  font-size: 3rem;
+  font-weight: 700;
+  left: 50%;
+  transform: translate(-50%, 50%);
+}
+
+.grid-cell .card svg{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 100%;
+  left: 0;
+}
+
+.grid-cell .card hr{
+  top: 50%;
+  border: 0;
+  width: 116px;
+  height: 1px;
+  background-color: rgba(red, green, blue, alpha);
+  z-index: 2;
+}
+.card__bottom__number{
+  transition: none;
+  transform: translate();
+}
